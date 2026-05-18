@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-text font-sans antialiased;
+  min-height: 100vh;
+  line-height: 1.75;
+}
+
+html {
+  min-height: 100%;
+}
+
+* {
+  @apply box-border;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Syne', sans-serif;
+}
+
+::selection {
+  background: rgba(200, 245, 87, 0.2);
+}
+
+.btn-primary {
+  @apply rounded-md bg-accent px-5 py-3 text-sm font-semibold text-bg transition hover:bg-accent2;
+}
+
+.card-base {
+  @apply rounded-3xl border border-border bg-bg p-6 transition hover:bg-bg2;
+}
+
+.tag-green {
+  @apply bg-[#182910] border-[#254015] text-[#8de070];
+}
+
+.tag-blue {
+  @apply bg-[#0d1e30] border-[#1a385a] text-[#7ab8f5];
+}
+
+.tag-amber {
+  @apply bg-[#291e08] border-[#4a3510] text-[#f5c876];
+}
+
+.tag-purple {
+  @apply bg-[#1c1430] border-[#362860] text-[#c4b0f5];
+}
+
+.tag-teal {
+  @apply bg-[#0a2422] border-[#184038] text-[#6ee7c0];
+}
+
+.tag-coral {
+  @apply bg-[#281308] border-[#45231a] text-[#f5a78a];
+}
