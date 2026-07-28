@@ -48,23 +48,6 @@ function Home({ onNavigate }) {
         </div>
       </section>
 
-      <div className="grid gap-4 xl:grid-cols-3">
-        {homeCards.map((card) => (
-          <button
-            key={card.id}
-            onClick={() => onNavigate(card.id)}
-            className="glass-card text-left p-5"
-          >
-            <div className="text-2xl">{card.icon}</div>
-            <div className="mt-5 space-y-2">
-              <div className="font-display text-base font-bold text-text">{card.title}</div>
-              <div className="text-sm font-mono text-text3">{card.subtitle}</div>
-              <div className="text-sm font-mono text-accent">{card.action}</div>
-            </div>
-          </button>
-        ))}
-      </div>
-
       <section className="rounded-[24px] border border-border/70 bg-bg3/70 p-5 sm:p-6">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
@@ -88,7 +71,7 @@ function Home({ onNavigate }) {
 
       <div className="grid gap-4 xl:grid-cols-3">
         <div className="glass-card p-5">
-          <div className="text-xs uppercase tracking-[0.2em] text-text3">Skills snapshot</div>
+          <div className="text-xs uppercase tracking-[0.2em] text-text3">Skills</div>
           <div className="mt-4 flex flex-wrap gap-2">
             {previewSkills.map((skill) => (
               <span key={skill} className="rounded-full border border-border2 bg-bg3/70 px-3 py-2 text-xs font-mono text-text2">
@@ -102,7 +85,7 @@ function Home({ onNavigate }) {
         </div>
 
         <div className="glass-card p-5 xl:col-span-2">
-          <div className="text-xs uppercase tracking-[0.2em] text-text3">Education preview</div>
+          <div className="text-xs uppercase tracking-[0.2em] text-text3">Education</div>
           <div className="mt-4 space-y-4">
             {previewEducation.map((item) => (
               <div key={item.degree} className="rounded-[18px] border border-border2 bg-bg3/70 p-5">
