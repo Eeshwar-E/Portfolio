@@ -9,7 +9,7 @@ export const homeCards = [
     id: 'projects',
     icon: '📁',
     title: 'Projects',
-    subtitle: '9 projects shipped',
+    subtitle: '4 featured builds',
     action: 'explore →'
   },
   {
@@ -30,30 +30,31 @@ export const homeCards = [
 
 export const projects = [
   {
-    name: 'EMG Prosthetic Arm',
+    name: 'AI Contract Analyzer',
+    year: '2026',
+    repo: 'https://github.com/Eeshwar-E/ai-contract-analyzer',
+    path: 'eeshwar-e / ai-contract-analyzer',
+    description: 'Built a transformer-based NLP pipeline for classifying legal clauses across 40+ contract categories with high precision, plus semantic search for contextual clause retrieval.',
+    tags: [
+      { label: 'Python', style: 'green' },
+      { label: 'FastAPI', style: 'blue' },
+      { label: 'React', style: 'blue' },
+      { label: 'Transformers', style: 'purple' },
+      { label: 'PostgreSQL', style: 'amber' }
+    ]
+  },
+  {
+    name: 'EMG based Prosthetic Arm',
     year: '2026',
     repo: 'https://drive.google.com/file/d/1N9ibjSvJwfAW_AZYme2Qx6jobZ_x6sBs/view?usp=sharing',
     path: 'eeshwar-e / emg-prosthetic-arm',
-    description: 'End-to-end biomedical system acquiring muscle signals via ESP32, classifying hand gestures with a CNN-LSTM network, and actuating a servo-driven prosthetic in real time.',
+    description: 'Developed an ESP32-based EMG acquisition pipeline and trained a CNN-LSTM model for real-time hand gesture classification with robust preprocessing.',
     tags: [
       { label: 'Python', style: 'green' },
       { label: 'CNN-LSTM', style: 'purple' },
       { label: 'ESP32', style: 'amber' },
-      { label: 'Embedded', style: 'coral' },
+      { label: 'Embedded AI', style: 'coral' },
       { label: 'Signal Processing', style: 'teal' }
-    ]
-  },
-  {
-    name: 'CWRU Bearing Fault Detection',
-    year: '2025',
-    path: 'eeshwar-e / bearing-fault-detection',
-    description: 'Industrial ML pipeline for classifying bearing faults using Random Forest and SVM on CWRU vibration data, with PCA feature reduction and rigorous cross-validation.',
-    tags: [
-      { label: 'Python', style: 'green' },
-      { label: 'Scikit-learn', style: 'purple' },
-      { label: 'PCA', style: 'purple' },
-      { label: 'Random Forest', style: 'purple' },
-      { label: 'SVM', style: 'purple' }
     ]
   },
   {
@@ -61,7 +62,7 @@ export const projects = [
     year: '2025',
     repo: 'https://github.com/Eeshwar-E/HR-ChatBot',
     path: 'eeshwar-e / HR-ChatBot',
-    description: 'Automated HR tool that parses resumes from PDF to structured JSON, exposes a secure REST API backend, and delivers real-time scoring via a React dashboard.',
+    description: 'Created an intelligent resume parser that extracts structured candidate data from PDFs and a secure Node.js backend with JWT auth, RBAC, and recruiter search APIs.',
     tags: [
       { label: 'React', style: 'blue' },
       { label: 'Node.js', style: 'blue' },
@@ -75,7 +76,7 @@ export const projects = [
     year: '2025',
     repo: 'https://github.com/Eeshwar-E/SMART-Disaster-Management-System',
     path: 'eeshwar-e / smart-disaster-relief',
-    description: 'Real-time relief operations platform with normalised database design, role-based access control, and React dashboards for monitoring resource distribution and volunteer allocation.',
+    description: 'Built a real-time relief operations platform with role-based access control and React dashboards for resource and volunteer tracking.',
     tags: [
       { label: 'React', style: 'blue' },
       { label: 'PostgreSQL', style: 'amber' },
@@ -84,11 +85,11 @@ export const projects = [
     ]
   },
   {
-    name: 'ZitHub — Custom VCS',
+    name: 'Zithub',
     year: '2024',
     repo: 'https://github.com/Eeshwar-E/ZitHub-VCS',
     path: 'eeshwar-e / ZitHub-VCS',
-    description: 'Git-inspired version control system built from scratch using Merkle Trees, delta compression, and a Flask commit-graph dashboard for branch analysis and debugging.',
+    description: 'Implemented a Git-inspired VCS with Merkle Tree integrity checks, staging and commit workflows, and delta-compression to reduce storage while preserving history.',
     tags: [
       { label: 'Python', style: 'green' },
       { label: 'Flask', style: 'blue' },
@@ -98,23 +99,24 @@ export const projects = [
     ]
   },
   {
-    name: 'AI Contract Analyzer',
+    name: 'CWRU Bearing Fault Detection',
     year: '2025',
-    repo: 'https://github.com/Eeshwar-E/ai-contract-analyzer',
-    path: 'eeshwar-e / ai-contract-analyzer',
-    description: 'AI-led contract analyzer that extracts clauses and surface-level risk metrics from agreements using Python-based NLP.',
+    path: 'eeshwar-e / bearing-fault-detection',
+    description: 'Built an industrial ML pipeline for classifying bearing faults using Random Forest and SVM on CWRU vibration data with PCA feature reduction and cross-validation.',
     tags: [
       { label: 'Python', style: 'green' },
-      { label: 'NLP', style: 'purple' },
-      { label: 'AI', style: 'teal' }
+      { label: 'Scikit-learn', style: 'purple' },
+      { label: 'PCA', style: 'purple' },
+      { label: 'Random Forest', style: 'purple' },
+      { label: 'SVM', style: 'purple' }
     ]
   },
   {
     name: 'Document Reader',
-    year: '2024',
+    year: '2026',
     repo: 'https://github.com/Eeshwar-E/Document-Reader',
     path: 'eeshwar-e / Document-Reader',
-    description: 'Document and image reader that extracts text from scanned pages and pictures, designed to simplify data capture from mixed media.',
+    description: 'Developed a document and image reader that extracts text from scanned pages and pictures for simplified data capture from mixed media.',
     tags: [
       { label: 'Python', style: 'green' },
       { label: 'OCR', style: 'purple' },
@@ -123,26 +125,14 @@ export const projects = [
   },
   {
     name: 'Finance Dashboard Demo',
-    year: '2024',
+    year: '2026',
     repo: 'https://github.com/Eeshwar-E/Finance_Dashboard_Demo',
     path: 'eeshwar-e / Finance_Dashboard_Demo',
-    description: 'Interactive finance dashboard demo built with React and JavaScript to visualize portfolio metrics and market trends.',
+    description: 'Built an interactive finance dashboard demo with React and JavaScript to visualize portfolio metrics and market trends.',
     tags: [
       { label: 'React', style: 'blue' },
       { label: 'JavaScript', style: 'blue' },
       { label: 'UI', style: 'amber' }
-    ]
-  },
-  {
-    name: 'Travelling Salesman Problem',
-    year: '2024',
-    repo: 'https://github.com/Eeshwar-E/Travelling-Salesman-Problem',
-    path: 'eeshwar-e / Travelling-Salesman-Problem',
-    description: 'Python implementation of Travelling Salesman Problem algorithms and heuristics for route optimization and performance comparison.',
-    tags: [
-      { label: 'Python', style: 'green' },
-      { label: 'Algorithms', style: 'purple' },
-      { label: 'Optimization', style: 'teal' }
     ]
   }
 ]
@@ -155,22 +145,22 @@ export const aboutSections = [
   },
   {
     label: 'Web Development',
-    items: ['React', 'Node.js', 'Express.js', 'Flask', 'HTML', 'CSS'],
+    items: ['React.js', 'HTML', 'CSS', 'FastAPI', 'Node.js', 'Express.js', 'Flask'],
     style: 'blue'
   },
   {
-    label: 'Machine Learning',
-    items: ['CNN-LSTM', 'Scikit-learn', 'PCA', 'Random Forest', 'SVM', 'Signal Processing'],
+    label: 'AI / ML',
+    items: ['Transformers', 'Scikit-learn', 'NLP', 'LLM Applications', 'CNN-LSTM', 'Signal Processing'],
     style: 'purple'
   },
   {
     label: 'Databases & Tools',
-    items: ['PostgreSQL', 'MySQL', 'SQLite', 'Git', 'Linux'],
+    items: ['PostgreSQL', 'SQLite', 'MySQL', 'Git', 'GitHub', 'Linux', 'REST APIs'],
     style: 'amber'
   },
   {
     label: 'Core Concepts',
-    items: ['DSA', 'OOP', 'Computer Architecture', 'OS', 'SDLC', 'Fault Analysis'],
+    items: ['DSA', 'System Design', 'Embedded AI', 'Computer Architecture', 'Operating Systems', 'DBMS'],
     style: 'teal'
   }
 ]
@@ -206,15 +196,13 @@ export const educationItems = [
     degree: 'B.Tech — Computer and Communication Engineering',
     institution: 'Amrita Vishwa Vidyapeetham, Coimbatore',
     period: 'Aug 2023 — May 2027',
-    score: 'CGPA 7.93',
+    score: 'CGPA 7.94',
     courses: [
       'Computer Architecture',
       'Operating Systems',
       'Data Structures & Algorithms',
-      'Database Management Systems',
-      'Computer Networks',
-      'Probability & Statistics',
-      'Linear Algebra',
+      'DBMS',
+      'Networks',
       'Machine Learning'
     ]
   },

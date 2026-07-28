@@ -18,9 +18,9 @@ export default {
         accent2: '#a3d93a'
       },
       fontFamily: {
-        sans: ['DM Sans', 'sans-serif'],
-        mono: ['DM Mono', 'monospace'],
-        display: ['Syne', 'sans-serif']
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['Geist Mono', 'ui-monospace', 'monospace'],
+        display: ['Geist', 'Inter', 'ui-sans-serif', 'sans-serif']
       }
     }
   },

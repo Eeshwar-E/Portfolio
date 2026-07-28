@@ -11,9 +11,11 @@ html {
 }
 
 body {
-  @apply bg-bg text-text font-sans antialiased;
+  @apply text-text font-sans antialiased;
   min-height: 100vh;
   line-height: 1.75;
+  background: linear-gradient(135deg, #06070b 0%, #0b1220 45%, #111b2d 100%);
+  background-attachment: fixed;
 }
 
 html {
@@ -30,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Geist', 'Inter', sans-serif;
 }
 
 ::selection {
@@ -38,33 +40,37 @@ h6 {
 }
 
 .btn-primary {
-  @apply rounded-md bg-accent px-5 py-3 text-sm font-semibold text-bg transition hover:bg-accent2;
+  @apply rounded-full bg-accent px-5 py-3 text-sm font-semibold text-bg transition hover:bg-accent2;
 }
 
 .card-base {
-  @apply rounded-3xl border border-border bg-bg p-6 transition hover:bg-bg2;
+  @apply rounded-[24px] border border-border/70 bg-bg/70 p-6 transition hover:-translate-y-0.5 hover:border-accent/30 hover:bg-bg2/80;
+}
+
+.glass-card {
+  @apply rounded-[24px] border border-white/10 bg-[rgba(8,12,22,0.78)] shadow-[0_10px_30px_rgba(0,0,0,0.16)] backdrop-blur-xl;
 }
 
 .tag-green {
-  @apply bg-[#182910] border-[#254015] text-[#8de070];
+  @apply border-[#254015] bg-[#182910] text-[#8de070];
 }
 
 .tag-blue {
-  @apply bg-[#0d1e30] border-[#1a385a] text-[#7ab8f5];
+  @apply border-[#1a385a] bg-[#0d1e30] text-[#7ab8f5];
 }
 
 .tag-amber {
-  @apply bg-[#291e08] border-[#4a3510] text-[#f5c876];
+  @apply border-[#4a3510] bg-[#291e08] text-[#f5c876];
 }
 
 .tag-purple {
-  @apply bg-[#1c1430] border-[#362860] text-[#c4b0f5];
+  @apply border-[#362860] bg-[#1c1430] text-[#c4b0f5];
 }
 
 .tag-teal {
-  @apply bg-[#0a2422] border-[#184038] text-[#6ee7c0];
+  @apply border-[#184038] bg-[#0a2422] text-[#6ee7c0];
 }
 
 .tag-coral {
-  @apply bg-[#281308] border-[#45231a] text-[#f5a78a];
+  @apply border-[#45231a] bg-[#281308] text-[#f5a78a];
 }
